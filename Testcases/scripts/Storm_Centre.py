@@ -1,6 +1,6 @@
-from Storm import Storm
-from Tornado import Tornado
-from Blizzard import Blizzard
+from .Storm import Storm
+from .Tornado import Tornado
+from .Blizzard import Blizzard
 
 
 class Storm_Centre:

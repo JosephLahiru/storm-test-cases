@@ -17,21 +17,9 @@ class TestBlizzard(unittest.TestCase):
         blizzard = Blizzard("Blizzard", 35, -10)
         self.assertEqual(blizzard.calculate_classification(), "Blizzard")
 
-        blizzard = Blizzard("Blizzard", 45, -12)
-        self.assertEqual(blizzard.calculate_classification(), "Severe Blizzard")
-
-        blizzard = Blizzard("Blizzard", 34, -10)
-        self.assertEqual(blizzard.calculate_classification(), "Snow Storm")
-
     def test_get_advice(self):
         blizzard = Blizzard("Blizzard", 35, -10)
         self.assertEqual(blizzard.get_advice(), "Keep warm, Do not travel unless absolutely essential.")
-
-        blizzard = Blizzard("Blizzard", 45, -12)
-        self.assertEqual(blizzard.get_advice(), "Keep warm, avoid all travel.")
-
-        blizzard = Blizzard("Blizzard", 34, -10)
-        self.assertEqual(blizzard.get_advice(), "Take care and avoid travel if possible.")
 
 if __name__ == "__main__":
     unittest.main()

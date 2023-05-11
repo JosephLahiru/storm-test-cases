@@ -1,4 +1,4 @@
-from Storm import Storm
+from .Storm import Storm
 
 
 class Tornado(Storm):
